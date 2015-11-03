@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+<div class="jumbotron">
+<p>
+  <h1 class="page-header">
+  <%= @work.name %>
+  </h1>
+</p>
+
+<p>
+<h6>
+	<%= @work.genre %>
+	</h6>
+<h3>
+	<%= @work.year.to_s + "年" if @work.genre == "anime" %>
+  </h3>
+  <p><h5>
+	<%= @work.desc if current_user.admin? || @work.genre != "anime" %>
+	</h5>
+</p>
+<br>
+<p>
+  <%= link_to "公式サイト", @work.url, :class => "btn btn-info btn-lg" if @work.url? %>
+</p>
+</div>
+<%= link_to 'Back', :back, :class => "btn btn-primary right" %>
+<br>
+<br>

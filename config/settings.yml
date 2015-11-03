@@ -1,0 +1,13 @@
+defaults: &defaults
+  last_turn: 20
+
+development:
+  <<: *defaults
+  last_turn: 15
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+  last_turn: 15

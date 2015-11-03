@@ -1,0 +1,38 @@
+
+<%= simple_form_for([@game,@relationship]) do |f| %>
+<%= f.error_notification %>
+<div class="container">
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Interest</th>
+			<% @people.each do |person|%>
+				<th><%= (current_user.admin?)? person.name : person.fake_name %></th>
+			<% end %>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @relationships.each do |work| %>
+      <tr>
+        <td><%= label_tag "clon[work_ids][#{work.id}]", work.work.name %></td>
+				<td>
+					<div class="progress">
+					  <div class="progress-bar progress-bar-striped active" role="progressbar" style="width: <%= work.favorability %>%;">
+					  </div>
+					  </div>
+				</td>
+			<% @people.each do |person|%>
+				<td><%= f.radio_button :favorability, {work_id:work.work.id,person_id:person.id} %> <%= f.label :mission, "布教" %></td>
+			<% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+  <div class="form-actions center">
+    <%= f.button :submit %>
+  </div>
+	<br>
+<% end %>

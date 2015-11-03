@@ -1,0 +1,14 @@
+<%= simple_form_for [@user,@game] do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+		<%= f.input :score, :readonly => true %>
+		<%= f.input :turn, :readonly => true %>
+		<%= f.input :user_id, :readonly => true %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit,"開始" %>
+  </div>
+<% end %>
+<br>

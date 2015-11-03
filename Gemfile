@@ -1,0 +1,122 @@
+source 'https://rubygems.org'
+ruby "2.2.3"
+
+gem 'rails','4.1.4'
+
+### OpenShift Online changes:
+
+# Fix the conflict with the system 'rake':
+#gem 'rake', '~> 0.9.6'
+
+# Support for databases and environment.
+# Use 'sqlite3' for testing and development and mysql and postgresql
+# for production.
+#
+# To speed up the 'git push' process you can exclude gems from bundle install:
+# For example, if you use rails + mysql, you can:
+#
+# $ rhc env set BUNDLE_WITHOUT="development test postgresql"
+#
+group :development, :test do
+  gem 'sqlite3'
+	gem 'rspec-rails'
+#  gem 'thor'
+  gem 'quiet_assets', group: :development
+	gem 'bullet'
+	gem 'did_you_mean'
+	gem 'annotate'
+	gem 'better_errors'
+	gem 'binding_of_caller'
+	gem 'libnotify'
+end
+
+  gem 'pry-rails'  # rails console(もしくは、rails c)でirbの代わりにpryを使われる
+  gem 'pry-doc'    # methodを表示
+	gem 'pry-byebug' # デバッグを実施(Ruby 2.0以降で動作する)
+	gem 'pry-stack_explorer' # スタックをたどれる
+  gem 'hirb'
+  gem 'hirb-unicode'
+# Add support for the MySQL
+#group :production, :mysql do
+#  gem 'mysql2'
+#end
+
+group :test do
+  gem 'webmock'
+  gem 'faker'
+  gem 'faker-japanese'
+  #gem "test-queue"
+	gem 'factory_girl_rails'
+end
+
+group :production do
+  gem 'pg'
+	gem 'rails_12factor'
+end
+
+### / OpenShift changes
+
+# Use SCSS for stylesheets
+gem 'sass-rails'
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
+# Use CoffeeScript for .js.coffee assets and views
+gem 'coffee-rails'
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+gem 'therubyracer',  platforms: :ruby
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
+# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'turbolinks'
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder'
+# bundle exec rake doc:rails generates the API under doc/api.
+gem 'sdoc', '~> 0.4.0',          group: :doc
+
+# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+gem 'spring',        group: :development
+# Use ActiveModel has_secure_password
+gem 'bcrypt', '~> 3.1.7'
+# Use puma as the app server
+gem 'puma'
+
+group :development do
+# To detect 脆弱性
+gem 'brakeman'
+# Best Practice
+gem 'rails_best_practices'
+
+gem 'rack-mini-profiler' # 簡易プロファイラ
+
+gem 'rails-erd'
+end
+
+# Use Twitter Bootstrap
+gem 'bootstrap-sass'
+gem 'bootstrap-generators'
+gem 'simple_form'
+# Define the static number
+gem 'settingslogic'
+# Login 
+gem 'devise'
+gem 'devise-bootstrap-views'
+gem 'devise-i18n'
+gem 'devise-i18n-views'
+gem 'rails-i18n'
+
+# Pagenation
+gem 'kaminari'
+# Admin_tool
+gem 'activeadmin', '~> 1.0.0.pre1'
+# Heroku
+gem 'heroku_rails_deflate', :group => :production
+# Seed for db
+gem 'seed-fu', '~> 2.3'
+
+# Use Capistrano for deployment
+# gem 'capistrano-rails', group: :development
+# Use debugger
+# gem 'debugger', group: [:development, :test]
+
+

@@ -1,0 +1,27 @@
+
+<div class="container">
+<table class="table">
+  <thead>
+    <tr>
+      <th>Choose</th>
+      <th>Name</th>
+      <th>Interest</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @works.each do |work| %>
+      <tr>
+        <td><%= 1 %></td>
+        <td><%= work.name %></td>
+        <td><%= work.name %></td>
+        <td><%= link_to 'Show', work %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+  <%= collection_check_boxes(:post, :work_ids, Work.all, :id, :name) do |b| %>
+			      <%= b.label { b.check_box + b.text } %>
+	<% end %>
