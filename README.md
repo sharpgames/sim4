@@ -10,7 +10,8 @@ This application is JAPANESE ONLY.
 ## Requirement
 * Ruby 2.2.3
 * SQLite3
-On UNIX environment is recommended. (Mac OS X or Debian, openSUSE)
+
+On UNIX environment is recommended. (ex. Mac OS X or Debian, openSUSE)
 
 ## Install
 
