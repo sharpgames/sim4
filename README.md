@@ -18,7 +18,7 @@ On UNIX environment is recommended. (ex. Mac OS X or Debian, openSUSE)
 ```bash
 git clone https://github.com/sharpgames/sim4.git
 cd sim4
-bundle install
+bundle install --without production
 rake db:migrate
 rake db:seed_fu
 rails server
