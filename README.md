@@ -5,6 +5,8 @@ A game of simulating missionary.
 
 [![wercker status](https://app.wercker.com/status/418cc1b21870d59b3fcb82b109f3fa49/m "wercker status")](https://app.wercker.com/project/bykey/418cc1b21870d59b3fcb82b109f3fa49)
 
+[![Dependency Status](https://gemnasium.com/sharpgames/sim4.svg)](https://gemnasium.com/sharpgames/sim4)
+
 This application is JAPANESE ONLY. 
 
 ## Requirement
