@@ -10,10 +10,17 @@ A game of simulating missionary.
 This application is JAPANESE ONLY. 
 
 ## Requirement
-* Ruby 2.2.3
-* SQLite3
+* Ruby 2.2.4
+* SQLite3(development) / PostgreSQL(production)
 
-On UNIX environment is recommended. (ex. Mac OS X or Debian, openSUSE)
+UNIX environment is recommended. (ex. Mac OS X or Debian, openSUSE)
+
+## Main Dependent Library
+* rails 4.2.5 : Web Framework
+* activeadmin : An administrartion framework
+* bootstrap-sass : Apply bootstrap theme
+* devise : Authentication logic
+* seed-fu : Seed data constructuring
 
 ## Install
 
@@ -27,6 +34,12 @@ rails server
 ```
 
 Access to http://0.0.0.0:3000/ and sign in.
+
+(You can use puma instea of rails server, then you should access to http://0.0.0.0:9292/ in default.)
+
+## Usage
+
+Please access to /readme .
 
 ## Contribution
 1. Fork it ( http://github.com/sharpgames/sim4/fork )
