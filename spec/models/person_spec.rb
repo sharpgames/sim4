@@ -3,12 +3,12 @@
 # Table name: people
 #
 #  id         :integer          not null, primary key
-#  name       :string(255)
+#  name       :string
 #  tags       :text
 #  affinity   :integer
 #  created_at :datetime
 #  updated_at :datetime
-#  fake_name  :string(255)
+#  fake_name  :string
 #
 
 require 'rails_helper'

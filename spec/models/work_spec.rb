@@ -3,12 +3,12 @@
 # Table name: works
 #
 #  id         :integer          not null, primary key
-#  name       :string(255)
+#  name       :string
 #  desc       :text
 #  tags       :text
 #  created_at :datetime
 #  updated_at :datetime
-#  url        :string(255)
+#  url        :string
 #  year       :integer
 #  genre      :integer
 #

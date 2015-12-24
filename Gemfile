@@ -23,7 +23,6 @@ group :development, :test do
 #  gem 'thor'
   gem 'quiet_assets', group: :development
 	gem 'bullet'
-	gem 'did_you_mean'
 	gem 'annotate'
 	gem 'better_errors'
 	gem 'binding_of_caller'
@@ -82,7 +81,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'puma'
 
 group :development do
-# To detect 脆弱性
+# To detect vulnerability
 gem 'brakeman'
 # Best Practice
 gem 'rails_best_practices'
