@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby "2.2.4"
 
-gem 'rails'
+gem 'rails', '~> 4.2.5.1'
 
 ### OpenShift Online changes:
 
@@ -98,7 +98,7 @@ gem 'simple_form'
 # Define the static number
 gem 'settingslogic'
 # Login 
-gem 'devise'
+gem 'devise', '>= 3.5.4'
 gem 'devise-bootstrap-views'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
@@ -119,3 +119,6 @@ gem 'seed-fu', '~> 2.3'
 # gem 'debugger', group: [:development, :test]
 
 
+
+gem 'nokogiri', '>= 1.6.7.2'
+gem 'rails-html-sanitizer', '~> 1.0.3'
