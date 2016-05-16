@@ -270,7 +270,7 @@ GEM
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
     ruby-graphviz (1.2.2)
-    ruby-progressbar (1.8.0)
+    ruby-progressbar (1.8.1)
     safe_yaml (1.0.4)
     sass (3.4.22)
     sass-rails (5.0.4)
@@ -305,7 +305,7 @@ GEM
       ref
     thor (0.19.1)
     thread_safe (0.3.5)
-    tilt (2.0.2)
+    tilt (2.0.3)
     turbolinks (2.5.3)
       coffee-rails
     tzinfo (1.2.2)
