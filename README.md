@@ -10,7 +10,7 @@ A game of simulating missionary.
 This application is JAPANESE ONLY. 
 
 ## Requirement
-* Ruby 2.2.4
+* Ruby 2.3.1
 * SQLite3(development) / PostgreSQL(production)
 
 UNIX environment is recommended. (ex. Mac OS X or Debian, openSUSE)
@@ -35,7 +35,7 @@ rails server
 
 Access to http://0.0.0.0:3000/ and sign in.
 
-(You can use puma instea of rails server, then you should access to http://0.0.0.0:9292/ in default.)
+(You can use puma instead of rails server, then you should access to http://0.0.0.0:9292/ in default.)
 
 ## Usage
 

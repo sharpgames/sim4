@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.2.4"
+ruby "2.3.1"
 
 gem 'rails', '~> 4.2.7.1'
 
@@ -31,8 +31,8 @@ end
 
   gem 'pry-rails'  # rails console(もしくは、rails c)でirbの代わりにpryを使われる
   gem 'pry-doc'    # methodを表示
-	gem 'pry-byebug' # デバッグを実施(Ruby 2.0以降で動作する)
-	gem 'pry-stack_explorer' # スタックをたどれる
+  #gem 'pry-byebug' # デバッグを実施(Ruby 2.0以降で動作する)
+  gem 'pry-stack_explorer' # スタックをたどれる
   gem 'hirb'
   gem 'hirb-unicode'
 # Add support for the MySQL
