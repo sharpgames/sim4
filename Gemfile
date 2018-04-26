@@ -120,5 +120,6 @@ gem 'seed-fu', '~> 2.3'
 
 
 
-gem 'nokogiri', '>= 1.8.1'
-gem 'rails-html-sanitizer', '~> 1.0.3'
+gem 'nokogiri', '>= 1.8.2'
+gem 'rails-html-sanitizer', '>= 1.0.4'
+gem 'loofah', '>= 2.2.1'
